@@ -31,6 +31,7 @@ Confirm your e-mail address by providing a launch code
 
 Congratulations! Your GitHub account was created. Sign in with your email and password
 ![Create account](./img/gh_account_007.png)
+**Image is rather large. Can you reduce size of it? As the wider images are also not that high, it would match better and look nicer.**
 
 Here is how your entry page should look like
 ![Create account](./img/gh_account_008.png)

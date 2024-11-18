@@ -17,3 +17,6 @@ And the best part of MD is that it's easy to learn and quickly converts to clean
 On this online [platform](https://markdownlivepreview.com), you can get familiar with MD syntax and experiment with it live. On the left side of the platform, you can edit the text, and on the right, you’ll see a live preview of how it would look like once rendered. It's a great way to practice Markdown and see immediate results.
 
 With Markdown, you can create clean, structured documents quickly and easily. Whether you're writing documentation or blog posts, it's an essential tool.
+
+**I don't see Markdown as a tool, as it is "just" a language. Docusaurus or others would be a tool to me. But I cannot come up with a better word for that sentence.
+Furthermore, MD is not essential. I know software where the docs are written in RST-files. This is not as nice as Markdown and I would start now using RST, but MD is not essential for docs or blog-posts.**

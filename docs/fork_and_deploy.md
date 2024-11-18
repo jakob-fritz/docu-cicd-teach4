@@ -15,9 +15,10 @@ When you fork a repository on GitHub, it creates an independent copy of the orig
 :::
 
 ![Deploy](./img/gh_deploy_001.png)
+**Move circle with "2" in it for better readability (e.g. above rectangle)**
 ![Deploy](./img/gh_deploy_002.png)
 
-After successful forking you should see in the top left corner your login name and below a lin where it was forked from, e.g. like on the picture forked from `ivzhukov/docu-cicd-teach4`.
+After successful forking you should see in the top left corner your login name and below a line where it was forked from, e.g. like on the picture forked from `ivzhukov/docu-cicd-teach4`.
 
 When you fork a repository, GitHub disables Actions (automated workflows like tests or deployments) by default for safety. To use them, we need to enable Actions for the forked repository as shown in the picture. Before doing this, it's a good idea to review the workflows to ensure they are safe and won't cause issues when they run.
 
@@ -29,7 +30,7 @@ When you fork a repository, GitHub disables Actions (automated workflows like te
 
 GitHub Actions are defined in the `.github/workflows` directory of a repository. If you open the `pages.yaml` file within that directory, you will find the full description of the workflow. This file contains the steps and configuration details for automating tasks. Each step in the file outlines specific actions to be performed, such as setting up dependencies, building the site, and deploying it.
 
-  ```
+  ```yaml
 name: Deploy static page
 
 on:
@@ -102,6 +103,7 @@ Remember the updated GitHub website link. Once everything is deployed, this link
 
 ![Deploy](./img/gh_deploy_006.png)
 ![Deploy](./img/gh_deploy_007.png)
+**Move circle with "2" in it for better readability**
 
 Now, let's modify the `docusaurus.config.ts` file by clicking on its name in the project. To edit it, click the pencil icon in the menu.
 ![Deploy](./img/gh_deploy_008.png)
@@ -120,10 +122,10 @@ Inside `docusaurus.config.ts`, you can configure things like:
 This file is crucial for customizing the functionality and appearance of your Docusaurus site.
 :::
 
-Modify user name from `ivzhukov` to your user name, feel free to modify `title` and `tagline` as well. Once you done with the changes click on `Commit changes` button.
+Modify `organizationName` from `ivzhukov` to your user name, feel free to modify `title` and `tagline` as well. Once you're done with the changes click on `Commit changes` button.
 ![Deploy](./img/gh_deploy_010.png)
 
-Provide meaningful commit message and click on `Commit`. 
+Provide meaningful commit message and click on `Commit`.
 ![Deploy](./img/gh_deploy_011.png)
 
 :::info
@@ -134,9 +136,11 @@ This commit will trigger the action defined in the `pages.yaml` file. You can wa
 
 For example here you can see that one workflow is running.
 ![Deploy](./img/gh_deploy_012.png)
+**Update orange rectangle to just highlight the title, as clicking elsewhere can lead to other pages.**
 
 If you click on specific workflow you will additional on which step is the current workflow.
 ![Deploy](./img/gh_deploy_013.png)
+**When I run it, it shows me annotations arning about deprecated Node.js and using a deprecated version of `actions/upload-artifact`**
 
 You can even see a breakdown of each step and see warnings and errors. This is very useful to identify the problem if you get stuck at one of the workflow steps.
 ![Deploy](./img/gh_deploy_014.png)
@@ -145,6 +149,7 @@ If everything went well during our deployment, you should see a green tick. This
 ![Deploy](./img/gh_deploy_015.png)
 
 If the workflow completes without any errors, you can visit the link mentioned earlier to view the freshly generated website. It should look like this!
+**No it does not look like the image. It states "TEACH 4" instead of "Hello TEACH 4 :party:"**
 ![Deploy](./img/gh_deploy_016.png)
 
 Congratulations! You have successfully deployed your first Docusaurus website on GitHub Pages.

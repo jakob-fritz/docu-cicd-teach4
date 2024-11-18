@@ -127,6 +127,7 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      /* I don't like the My Project, Inc. Maybe use something different*/
     },
     prism: {
       theme: prismThemes.github,

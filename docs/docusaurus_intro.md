@@ -12,4 +12,6 @@ Docusaurus is an open-source tool for building documentation websites. It helps 
 
 Get started by **creating a new page/document/blog**.
 
+**I'm missing a link here. Because with the bold text, I don't know how to create a new page/document or blog**
+
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.

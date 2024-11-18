@@ -7,6 +7,6 @@ sidebar_position: 3
 
 This is my **first Docusaurus document**!
 
-:::info
-This is an info box
+:::info[Exercise]
+This is an exercise now
 :::
